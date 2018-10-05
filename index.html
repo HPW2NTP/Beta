@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LaBaBreak</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+     <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<script type="text/javascript">
+
+</script>
+    	
+</head>
+<body>
+ <center>             
+<img width="200px" src="img/20181006052732.png"/>
+<img width="200px" src="https://saigonbreak.github.io/SaiGonBreakMe/img/20181005152050.png"/>
+
+</center>
+
+	<div class="top-text"><span></span></div>
+  
+	<div class="center-text"><span>Jailbreak</span></div>
+	<div class="bottom-text2"><div id="load" class="jbme"></div></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function change1() {
+			$(".center-text").html("<span>bypassing kpp...</span>");
+			setTimeout(change2, 8000);
+		}
+		function change2() {
+			$(".center-text").html("<span>exploiting kernel</span>");
+			setTimeout(change3, 10000);
+		}
+		function change3() {
+			$(".center-text").html("<span>exploiting kernel, </br> success</span>");
+			setTimeout(change4, 8000);
+		}
+		function change4() {
+			$(".center-text").html("<span>bypassing AMCC...</span>");
+			setTimeout(change5, 10000);
+		}
+function change5() {
+			$(".center-text").html("<span>installing LaBaStore...</span>");
+			setTimeout(change6, 20000);
+		}
+		function change6() {
+			window.location.replace("https://saigonbreak.github.io/reboot/source.html");
+			setTimeout(change7, 6000);
+		}
+		$(".center-text").click(function() {
+			if(!$(this).hasClass("kolor2")) { 
+				$(".center-text").addClass("kolor2");
+				setTimeout(change1, 5000);
+			}
+		});
+	</script>
+		<script>$(document).ready(function() {
+	function iOSversion() {
+		if (/iP(hone|od|ad)/.test(navigator.platform)) {
+			// supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
+			var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+			return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+		}
+	}
+
+	ver = iOSversion();
+
+	if (ver[0] >= 5) {
+		document.getElementById('load').innerHTML = 'Running iOS '+ver;
+		/*$('body').addClass('iOS-tagged');
+	*/}
+});
+	</script>
+</body>
+</html>
